@@ -5,5 +5,7 @@ import '@testing-library/jest-dom/extend-expect';
 afterEach(rtl.cleanup);
 
 it('renders without crashing', () => {
-  // ready to test!
+  const wrapper = rtl.render(
+    <span className="greet">hello world</span>
+  );
 });
