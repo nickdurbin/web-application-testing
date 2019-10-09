@@ -16,12 +16,12 @@ function Dashboard(props) {
 
   const handleBall = () => {
     if (balls == 3) { 
-    setStrikes(0);
-    setBalls(0);
+      setStrikes(0);
+      setBalls(0);
     }
     else
     {
-    setBalls(balls+1);
+      setBalls(balls+1);
     }
   }
 
@@ -38,10 +38,10 @@ function Dashboard(props) {
 
   return (
     <section className="buttons">
-      <button onClick={()=>handleStrike()}  className="strikeButton">STRIKE</button>
-      <button onClick={()=>handleBall()}  className="ballButton">BALL</button>
-      <button onClick={()=>handleFoul()}  className="foulButton">FOUL</button>
-      <button onClick={()=>handleHit()}  className="hitButton">HIT</button>
+      <button onClick={()=>handleStrike()} className="strikeButton">STRIKE</button>
+      <button onClick={()=>handleBall()} className="ballButton">BALL</button>
+      <button onClick={()=>handleFoul()} className="foulButton">FOUL</button>
+      <button onClick={()=>handleHit()} className="hitButton">HIT</button>
     </section>
   );
 }

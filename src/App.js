@@ -9,13 +9,9 @@ function App() {
   return (
     <div className="App">
       <header data-testid="main-header" className="App-header">
-        <p>
-          Web-Application-Testing
-        </p>
-
+        <p> Baseball Application </p>
         <Display balls={balls} strikes={strikes}/>
         <Dashboard balls={balls} strikes={strikes} setBalls={setBalls} setStrikes={setStrikes} />
-        
       </header>
     </div>
   );
