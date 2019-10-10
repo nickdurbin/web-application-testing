@@ -68,7 +68,7 @@ function Dashboard(props) {
     <section className="buttons">
       <button onClick={()=>handleStrikes()} className="strikeButton">STRIKES</button>
       <button onClick={()=>handleBalls()} className="ballButton">BALLS</button>
-      <button onClick={()=>handleFouls()} className="foulButton">FOULS</button>
+      <button onClick={()=>handleFouls()} data-testid='foulButton' className="foulButton">FOULS</button>
       <button onClick={()=>handleHits()} className="hitButton">HITS</button>
       <button onClick={()=>handleOuts()} className="outButton">OUTS</button>
       <button onClick={()=>handleInnings()} className="inningButton">INNINGS</button>
