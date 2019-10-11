@@ -1,5 +1,3 @@
-import Dashboard from './Dashboard';
-
 const dash = require('./Dashboard');
 
 describe('reset function', () => {

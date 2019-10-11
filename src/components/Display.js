@@ -1,7 +1,6 @@
 import React from 'react'
 
-function Display(props) {
-  const {balls, strikes, outs, innings, errors, hits} = props;
+function Display({ stats: { strikes, balls, outs, hits, innings, errors }}) {
 
   return (
      <div className="gameContainer">
