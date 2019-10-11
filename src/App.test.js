@@ -18,10 +18,22 @@ test('multiple buttons handling click events', async () => {
   expect(buttonsCheck.length).toBe(8)
 })
 
-test('test the number of balls', async () => {
+test('test the click event of the balls counter button and the display of count', async () => {
   const wrapper = rtl.render(<App />);
   const ballButtonCheck = await wrapper.getByTestId('Balls');
-  expect(ballButtonCheck.textContent).toBe('0')
-  fireEvent.click(getByTestId('Balls'))
-  expect(ballButtonCheck.textContent).toBe(1)
+  const ballsDisplay = await wrapper.getByTestId('ballsDisplay');
+
+  expect(ballsDisplay.textContent).toBe('0')
+  rtl.fireEvent.click(ballButtonCheck)
+
+  expect(ballsDisplay.textContent).toBe('1')
+  rtl.fireEvent.click(ballButtonCheck)
+
+  expect(ballsDisplay.textContent).toBe('2')
+  rtl.fireEvent.click(ballButtonCheck)
+
+  expect(ballsDisplay.textContent).toBe('3')
+  rtl.fireEvent.click(ballButtonCheck)
+
+  expect(ballsDisplay.textContent).toBe('0')
 })

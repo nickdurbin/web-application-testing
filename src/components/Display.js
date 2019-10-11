@@ -11,7 +11,7 @@ function Display({ stats: { strikes, balls, outs, hits, innings, errors }}) {
 
         <div className="ballsContainer">
            <h2 className="ballsHeader">Balls</h2>
-           <div className="ballsDisplay">{balls}</div>
+           <div data-testid='ballsDisplay' className="ballsDisplay">{balls}</div>
         </div>
 
         <div className="outsContainer">
