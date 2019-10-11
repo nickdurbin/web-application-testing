@@ -2,8 +2,8 @@ const display = require('./Display');
 
 describe('reset function', () => {
   it('resets the game', () => {
-    const expected = setStrikes(0);
-    const actual = dash.resetGame(setStrikes(0))
+    const expected = 0
+    const actual = display.balls = 0
     expected(actual).toBe(expected);
   })
 }); 

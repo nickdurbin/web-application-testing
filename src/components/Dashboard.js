@@ -5,7 +5,7 @@ function Dashboard({ buttonFunctions }) {
   const labels = ['Fouls', 'Strikes', 'Balls', 'Outs', 'Hits', 'Errors', 'Innings', 'Reset'];
   return (
     Object.values(buttonFunctions)
-      .map((button, i) => <button onClick={button}>{labels[i]}</button>)
+      .map((button, i) => <button data-testid={labels[i]} onClick={button}>{labels[i]}</button>)
     );
 }
 
